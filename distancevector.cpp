@@ -44,7 +44,7 @@ int main()
     //cin >> V;
     V=9;
     //vector<vector<int>> G(V, vector<int>(V, 0));
-        vector<vector<int>> G = {{0, -4, 0, 0, 0, 0, 0, 8, 0},
+        vector<vector<int>> G = {{0, 4, 0, 0, 0, 0, 0, 8, 0},
                                  {4, 0, 8, 0, 0, 0, 0, 11, 0},
                                  {0, 8, 0, 7, 0, 4, 0, 0, 2},
                                  {0, 0, 7, 0, 9, 14, 0, 0, 0},
@@ -66,15 +66,7 @@ int main()
         }
     }
 
-    if (Bellman_Ford(G, V, edge.size(), edge))
-    {
-
-    }
-    else
-    {
-        cout<<"ggg";
-    }
-        //cout << "\nNo negative weight cycle exists\n";
+    Bellman_Ford(G, V, edge.size(), edge);
 
 
     return 0;
